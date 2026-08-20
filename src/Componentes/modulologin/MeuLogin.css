@@ -1,0 +1,122 @@
+.meu-login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: linear-gradient(135deg, #061b2d 0%, #0a3d5b 35%, #0b7a78 100%);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.meu-login-card {
+  width: min(100%, 420px);
+  padding: 32px 24px;
+  border-radius: 22px;
+  background: rgba(7, 22, 36, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(4px);
+}
+
+.meu-login-badge {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(95, 214, 180, 0.18);
+  color: #a9f2de;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+}
+
+.meu-login-card h1 {
+  margin: 18px 0 8px;
+  font-size: 2rem;
+  color: #f4fbff;
+}
+
+.meu-login-subtitle {
+  margin: 0 0 24px;
+  color: #d5ebef;
+  font-size: 0.95rem;
+}
+
+.meu-login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.meu-login-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+  color: #dfeef5;
+  font-size: 0.9rem;
+}
+
+.meu-login-field input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 12px;
+  padding: 14px 14px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.meu-login-field input::placeholder {
+  color: rgba(220, 234, 238, 0.7);
+}
+
+.meu-login-field input:focus {
+  border-color: #7fe0c6;
+  box-shadow: 0 0 0 3px rgba(127, 224, 198, 0.18);
+}
+
+.meu-login-button {
+  border: none;
+  border-radius: 12px;
+  padding: 14px 16px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #06233a;
+  background: linear-gradient(135deg, #7fe0c6 0%, #59b6ff 100%);
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.meu-login-button:hover {
+  opacity: 0.96;
+  transform: translateY(-1px);
+}
+
+.meu-login-erro {
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: rgba(255, 118, 118, 0.15);
+  border: 1px solid rgba(255, 118, 118, 0.28);
+  color: #ffd4d4;
+  font-size: 0.88rem;
+}
+
+.meu-login-dica {
+  margin-top: 18px;
+  color: #d4edf0;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .meu-login-card {
+    padding: 24px 18px;
+  }
+
+  .meu-login-card h1 {
+    font-size: 1.6rem;
+  }
+}
