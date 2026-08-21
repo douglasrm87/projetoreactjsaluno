@@ -169,6 +169,70 @@
   color: #cfe7ef;
 }
 
+.transmissao-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.transmissao-grupo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.transmissao-label {
+  color: #a6dfe8;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.channel-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.channel-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 8px 5px 5px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #f5fbff;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.channel-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  font-size: 0.62rem;
+  font-weight: 800;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.globo .channel-icon { background: #d3162d; }
+.sbt .channel-icon { background: #0b4d9b; }
+.band .channel-icon { background: #f0b92c; color: #0f2439; }
+.espn .channel-icon { background: #0b2d67; }
+.premiere .channel-icon { background: #7b2cbf; }
+.f1 .channel-icon { background: #ef4444; }
+.dazn .channel-icon { background: #00c2ff; color: #06233d; }
+.default .channel-icon { background: #5fd0c5; color: #06233d; }
+
 @media (max-width: 768px) {
   .home-shell {
     padding: 18px;

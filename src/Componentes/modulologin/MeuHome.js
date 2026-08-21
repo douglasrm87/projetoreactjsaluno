@@ -7,6 +7,58 @@ import {
   corridasDaSemana,
 } from './EsporteDados';
 
+const canalClassName = {
+  'TV Globo': 'globo',
+  SBT: 'sbt',
+  Band: 'band',
+  ESPN: 'espn',
+  Premiere: 'premiere',
+  'F1 TV': 'f1',
+  DAZN: 'dazn',
+};
+
+function getInicialCanal(nome) {
+  return nome
+    .split(' ')
+    .map((parte) => parte[0])
+    .slice(0, 2)
+    .join('')
+    .toUpperCase();
+}
+
+function ListaCanais({ canais = {} }) {
+  const abertas = canais.aberta || [];
+  const fechadas = canais.fechada || [];
+
+  return (
+    <div className="transmissao-container">
+      <div className="transmissao-grupo">
+        <span className="transmissao-label">TV aberta</span>
+        <div className="channel-list">
+          {abertas.map((canal) => (
+            <span key={canal} className={`channel-badge ${canalClassName[canal] || 'default'}`}>
+              <span className="channel-icon">{getInicialCanal(canal)}</span>
+              {canal}
+            </span>
+          ))}
+        </div>
+      </div>
+
+      <div className="transmissao-grupo">
+        <span className="transmissao-label">TV fechada</span>
+        <div className="channel-list">
+          {fechadas.map((canal) => (
+            <span key={canal} className={`channel-badge ${canalClassName[canal] || 'default'}`}>
+              <span className="channel-icon">{getInicialCanal(canal)}</span>
+              {canal}
+            </span>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function ListaEsportes({ titulo, itens, tipo }) {
   return (
     <div className="home-panel">
@@ -23,6 +75,7 @@ function ListaEsportes({ titulo, itens, tipo }) {
                 </div>
                 <p>{item.horario}</p>
                 <small>{item.local}</small>
+                <ListaCanais canais={item.canais} />
               </>
             ) : (
               <>
@@ -31,6 +84,7 @@ function ListaEsportes({ titulo, itens, tipo }) {
                 </div>
                 <p>{item.horario}</p>
                 <small>{item.circuito}</small>
+                <ListaCanais canais={item.canais} />
               </>
             )}
           </div>
