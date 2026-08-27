@@ -6,6 +6,7 @@ export async function getWeatherByCity(city) {
     );
 
     const geoData = await geoResponse.json();
+    console.log ("Dados de geocodificação:", geoData);
 
     if (!geoData.results || geoData.results.length === 0) {
       throw new Error(`Cidade "${city}" não encontrada.`);
@@ -19,7 +20,7 @@ export async function getWeatherByCity(city) {
     );
 
     const weatherData = await weatherResponse.json();
-
+    console.log("Dados de clima:", weatherData);
     return {
       city: name,
       country,
