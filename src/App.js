@@ -7,6 +7,7 @@ import OficinaBandeiraIslandia from './Componentes/OficinaBandeiraIslandia';
 import OficinaComponente from './Componentes/OficinaComponente';
 import PainelPedidos from './Componentes/Exercicio01e02Intro/PainelPedidos';
 import ClimaCidade from './Componentes/Exercicio01e02Intro/ClimaCidade';
+import Weather from './Componentes/Exercicio01e02Intro/Weather';
 
 // Acionará o UnificandoModulos.js
 function App() {
@@ -27,8 +28,9 @@ function App() {
                 planUML
        */}
       {/* <MeuLogin /> */}
-      <PainelPedidos totalInicial={10} />
-      <ClimaCidade cidade="Curitiba" />
+      {/*<PainelPedidos totalInicial={10} />
+      <ClimaCidade cidade="Londrina" /> */}
+      <Weather />
       {/*<ClimaCidade cidade="Londrina" />*/}
     </div>
   );
