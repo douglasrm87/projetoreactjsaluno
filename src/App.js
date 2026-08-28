@@ -27,11 +27,12 @@ function App() {
                 https://www.figma.com/pt-br/
                 planUML
        */}
-      {/* <MeuLogin /> */}
+       <MeuLogin /> 
       {/*<PainelPedidos totalInicial={10} />
       <ClimaCidade cidade="Londrina" /> */}
-      <Weather />
+     
       {/*<ClimaCidade cidade="Londrina" />*/}
+       {/*<Weather />*/}
     </div>
   );
 }
