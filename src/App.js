@@ -8,6 +8,7 @@ import OficinaComponente from './Componentes/OficinaComponente';
 import PainelPedidos from './Componentes/Exercicio01e02Intro/PainelPedidos';
 import ClimaCidade from './Componentes/Exercicio01e02Intro/ClimaCidade';
 import Weather from './Componentes/Exercicio01e02Intro/Weather';
+import RoteadorProjetoEstacio from './Componentes/projetoestacio/RoteadorProjetoEstacio';
 
 // Acionará o UnificandoModulos.js
 function App() {
@@ -27,7 +28,8 @@ function App() {
                 https://www.figma.com/pt-br/
                 planUML
        */}
-       <MeuLogin /> 
+      {/* <MeuLogin /> */}
+       <RoteadorProjetoEstacio />
       {/*<PainelPedidos totalInicial={10} />
       <ClimaCidade cidade="Londrina" /> */}
      

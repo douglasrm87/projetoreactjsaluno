@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import './MeuLogin.css';
-import MeuHome from './MeuHome';
+import './MeuLogin.css'; // pode pulrar a importação do CSS se não quiser estilizar o login
+import MeuHome from './MeuHome'; // Importa o componente MeuHome para exibir após o login bem-sucedido
 
 const USUARIO_VALIDO = 'aluno';
 const SENHA_VALIDA = '1234';
