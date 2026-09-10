@@ -1,0 +1,48 @@
+.planejador-container {
+  padding: 20px;
+  background: #f4f7fa;
+  min-height: 100vh;
+}
+
+.titulo-card,
+.linhas-card,
+.roteiro-card,
+.observacoes-card {
+  background: #fff;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-card h1 {
+  color: #0066cc;
+}
+
+.linhas-grid {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.linha-item {
+  width: 220px;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #e2e2e2;
+  background: #fafafa;
+}
+
+.linha-item h3 {
+  margin: 0;
+  color: #0066cc;
+}
+
+.roteiro-card ol li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.observacoes-card ul li {
+  margin-bottom: 8px;
+}

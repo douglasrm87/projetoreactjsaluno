@@ -9,7 +9,7 @@ export default function LoginSmartBus() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (
-      email === 'admin@smartbus.com' &&
+      (email === 'admin@smartbus.com' || email === 'admin@teste.com') &&
       senha === '1234'
     ) {
        alert('Login realizado com sucesso.')

@@ -1,0 +1,46 @@
+.ocorrencias-container {
+  padding: 20px;
+  background: #f4f6f8;
+  min-height: 100vh;
+}
+
+.header {
+  background: #ff9800;
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.pesquisa {
+  margin-bottom: 20px;
+}
+
+.pesquisa input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.lista-obras {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card-obra {
+  background: white;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.status {
+  display: inline-block;
+  margin-top: 10px;
+  background: #4caf50;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+}

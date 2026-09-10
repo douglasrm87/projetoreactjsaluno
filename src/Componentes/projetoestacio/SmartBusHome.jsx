@@ -1,14 +1,17 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import './SmartBusHome.css'
 
 function SmartBusHome() {
+  const navigate = useNavigate()
+
   const menuItems = [
-    { icon: '🚌', texto: 'LINHAS' },
-    { icon: '📍', texto: 'MAPA' },
-    { icon: '⭐', texto: 'FAVORITOS' },
-    { icon: '⚠️', texto: 'OCORRÊNCIAS' },
-    { icon: '🤝', texto: 'ASSISTÊNCIA SOCIAL' },
-    { icon: '🚪', texto: 'SAIR' }
+    { icon: '🚌', texto: 'LINHAS', rota: '/linhas' },
+    { icon: '📍', texto: 'MAPA', rota: '/mapa-turistico' },
+    { icon: '⭐', texto: 'FAVORITOS', rota: '/favoritos' },
+    { icon: '⚠️', texto: 'OCORRÊNCIAS', rota: '/ocorrencias' },
+    { icon: '🤝', texto: 'ASSISTÊNCIA SOCIAL', rota: '/assistencia-social' },
+    { icon: '🚪', texto: 'SAIR', rota: '/' }
   ]
 
   return (
@@ -22,7 +25,11 @@ function SmartBusHome() {
       <div className="menu-card">
 
         {menuItems.map((item, index) => (
-          <button key={index} className="menu-button">
+          <button
+            key={index}
+            className="menu-button"
+            onClick={() => navigate(item.rota)}
+          >
             <span>{item.icon}</span>
             {item.texto}
           </button>
