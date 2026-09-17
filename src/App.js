@@ -1,14 +1,12 @@
 import './App.css';
-import MeuLogin from './Componentes/modulologin/MeuLogin';
- 
-
-import UnificandoModulos from './Componentes/moduloUnificado/UnificandoModulos';
-import OficinaBandeiraIslandia from './Componentes/OficinaBandeiraIslandia';
-import OficinaComponente from './Componentes/OficinaComponente';
-import PainelPedidos from './Componentes/Exercicio01e02Intro/PainelPedidos';
-import ClimaCidade from './Componentes/Exercicio01e02Intro/ClimaCidade';
-import Weather from './Componentes/Exercicio01e02Intro/Weather';
-import RoteadorProjetoEstacio from './Componentes/projetoestacio/RoteadorProjetoEstacio';
+//import MeuLogin from './Componentes/modulologin/MeuLogin';
+//import UnificandoModulos from './Componentes/moduloUnificado/UnificandoModulos';
+//import OficinaBandeiraIslandia from './Componentes/OficinaBandeiraIslandia';
+//import OficinaComponente from './Componentes/OficinaComponente';
+//import PainelPedidos from './Componentes/Exercicio01e02Intro/PainelPedidos';
+//import ClimaCidade from './Componentes/Exercicio01e02Intro/ClimaCidade';
+//import Weather from './Componentes/Exercicio01e02Intro/Weather';
+//import RoteadorProjetoEstacio from './Componentes/projetoestacio/RoteadorProjetoEstacio';
 
 // Acionará o UnificandoModulos.js
 function App() {
