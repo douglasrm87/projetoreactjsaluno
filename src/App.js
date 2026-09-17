@@ -6,7 +6,7 @@ import './App.css';
 //import PainelPedidos from './Componentes/Exercicio01e02Intro/PainelPedidos';
 //import ClimaCidade from './Componentes/Exercicio01e02Intro/ClimaCidade';
 //import Weather from './Componentes/Exercicio01e02Intro/Weather';
-//import RoteadorProjetoEstacio from './Componentes/projetoestacio/RoteadorProjetoEstacio';
+import RoteadorProjetoEstacio from './Componentes/projetoestacio/RoteadorProjetoEstacio';
 
 // Acionará o UnificandoModulos.js
 function App() {
